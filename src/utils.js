@@ -24,7 +24,8 @@ const getCssModuleKeys = content => {
 const filenameToInterfaceName = filename => {
   return path
     .basename(filename)
-    .replace(/^(\w)/, (_, c) => "I" + c.toUpperCase())
+    .replace("scss", "styles")
+    .replace(/^(\w)/, (_, c) => + c.toUpperCase())
     .replace(/\W+(\w)/g, (_, c) => c.toUpperCase());
 };
 
@@ -52,12 +53,13 @@ const generateGenericExportInterface = (cssModuleKeys, interfaceName) => {
   const interfaceProperties = cssModuleToTypescriptInterfaceProperties(
     cssModuleKeys
   );
-  return `export interface ${interfaceName} {
+  return `interface ${interfaceName} {
 ${interfaceProperties}
 }
 
-export const locals: ${interfaceName};
-export default locals;`;
+declare const locals: ${interfaceName};
+export = locals;`;
+
 };
 
 module.exports = {

@@ -1,6 +1,6 @@
 {
-  "name": "@teamsupercell/typings-for-css-modules-loader",
-  "version": "2.0.0",
+  "name": "@krzysztof-cislo/typings-for-css-modules-loader",
+  "version": "3.0.0",
   "description": "Webpack loader that generates TypeScript typings for CSS modules from css-loader on the fly",
   "main": "src/index.js",
   "scripts": {
@@ -39,12 +39,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TeamSupercell/typings-for-css-modules-loader.git"
+    "url": "git+https://github.com/krzysztof-cislo/typings-for-css-modules-loader.git"
   },
   "bugs": {
-    "url": "https://github.com/TeamSupercell/typings-for-css-modules-loader/issues"
+    "url": "https://github.com/krzysztof-cislo/typings-for-css-modules-loader/issues"
   },
-  "homepage": "https://github.com/TeamSupercell/typings-for-css-modules-loader#readme",
+  "homepage": "https://github.com/krzysztof-cislo/typings-for-css-modules-loader#readme",
   "eslintConfig": {
     "parserOptions": {
       "ecmaVersion": 2017
