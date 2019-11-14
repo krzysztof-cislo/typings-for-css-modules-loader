@@ -1,6 +1,6 @@
 {
   "name": "@krzysztof-cislo/typings-for-css-modules-loader",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "Webpack loader that generates TypeScript typings for CSS modules from css-loader on the fly",
   "main": "src/index.js",
   "scripts": {
