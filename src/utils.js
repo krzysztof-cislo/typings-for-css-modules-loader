@@ -25,7 +25,7 @@ const filenameToInterfaceName = filename => {
   return path
     .basename(filename)
     .replace("scss", "styles")
-    .replace(/^(\w)/, (_, c) => + c.toUpperCase())
+    .replace(/^(\w)/, (_, c) => c.toUpperCase())
     .replace(/\W+(\w)/g, (_, c) => c.toUpperCase());
 };
 
@@ -53,7 +53,7 @@ const generateGenericExportInterface = (cssModuleKeys, interfaceName) => {
   const interfaceProperties = cssModuleToTypescriptInterfaceProperties(
     cssModuleKeys
   );
-  return `interface ${interfaceName} {
+  return `export interface ${interfaceName} {
 ${interfaceProperties}
 }
 
