@@ -53,7 +53,7 @@ const generateGenericExportInterface = (cssModuleKeys, interfaceName) => {
   const interfaceProperties = cssModuleToTypescriptInterfaceProperties(
     cssModuleKeys
   );
-  return `export interface ${interfaceName} {
+  return `interface ${interfaceName} {
 ${interfaceProperties}
 }
 
