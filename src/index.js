@@ -48,7 +48,7 @@ module.exports = function(content, ...args) {
 
   // let's only check `exports.locals` for keys to avoid getting keys from the sourcemap when it's enabled
   const cssModuleKeys = getCssModuleKeys(
-    content.substring(content.indexOf("exports.locals"))
+    content.substring(content.indexOf("___CSS_LOADER_EXPORT___.locals"))
   );
 
   /** @type {any} */
